@@ -1,0 +1,58 @@
+{
+	"name": "entregas_sql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sql_Tarea1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "sql"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "entrega_id",
+				"type": "varchar"
+			},
+			{
+				"name": "pedido_id",
+				"type": "varchar"
+			},
+			{
+				"name": "repartidor_id",
+				"type": "varchar"
+			},
+			{
+				"name": "hora_salida",
+				"type": "time",
+				"scale": 7
+			},
+			{
+				"name": "hora_entrega",
+				"type": "time",
+				"scale": 7
+			},
+			{
+				"name": "tiempo_entrega_min",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "distancia_km",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "estado_entrega",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "entregas"
+		}
+	}
+}

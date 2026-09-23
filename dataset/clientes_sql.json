@@ -1,0 +1,48 @@
+{
+	"name": "clientes_sql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sql_Tarea1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "sql"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "cliente_id",
+				"type": "varchar"
+			},
+			{
+				"name": "nombre",
+				"type": "varchar"
+			},
+			{
+				"name": "email",
+				"type": "varchar"
+			},
+			{
+				"name": "telefono",
+				"type": "varchar"
+			},
+			{
+				"name": "ciudad",
+				"type": "varchar"
+			},
+			{
+				"name": "fecha_registro",
+				"type": "date"
+			},
+			{
+				"name": "segmento",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "clientes"
+		}
+	}
+}

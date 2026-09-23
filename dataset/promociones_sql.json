@@ -1,0 +1,45 @@
+{
+	"name": "promociones_sql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sql_Tarea1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "sql"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "promocion_id",
+				"type": "varchar"
+			},
+			{
+				"name": "nombre_promocion",
+				"type": "varchar"
+			},
+			{
+				"name": "fecha_inicio",
+				"type": "date"
+			},
+			{
+				"name": "fecha_fin",
+				"type": "date"
+			},
+			{
+				"name": "porcentaje_descuento",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "canal_aplicable",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "promociones"
+		}
+	}
+}
